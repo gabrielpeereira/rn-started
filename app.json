@@ -1,9 +1,7 @@
 {
   "expo": {
-    "name": "rn-starter",
-    "slug": "rn-starter",
-    "privacy": "public",
-    "sdkVersion": "36.0.0",
+    "name": "start",
+    "slug": "start",
     "platforms": [
       "ios",
       "android",
