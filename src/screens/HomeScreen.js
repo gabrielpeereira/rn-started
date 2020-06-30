@@ -1,17 +1,24 @@
 import React from 'react';
-import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, View, Button } from 'react-native';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
+  
   return (
     <View>
       <Text style={styles.text}>Hi there!</Text>
       <Button
-        onPress={() => console.log('Buttob pressed')} 
+        onPress={() => navigation.navigate('Components')} 
           title="Go to Components Demo" 
       />
-      <TouchableOpacity onPress={() => console.log('List Pressed')}>
-        <Text>Go to List Demo</Text>
-      </TouchableOpacity>
+    <Button 
+      onPress={() => navigation.navigate('List')}
+      title="Go to List"
+    />
+
+    <Button 
+      onPress={() => navigation.navigate('Image')}
+      title="Go To Image"
+    />
     </View>
     
   )
