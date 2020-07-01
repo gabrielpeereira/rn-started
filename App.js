@@ -1,3 +1,4 @@
+require('react-native').unstable_enableLogBox()
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
