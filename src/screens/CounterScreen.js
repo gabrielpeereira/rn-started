@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useReducer } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
+const reducer = (state, action) => {
+
+}
+
 const CouterScreen = () => {
-    const [counter, setCounter] = useState(0);
+    const [state, dispatch] = useReducer(reducer, 0);
     return(
         <View>
             <Button title="Increase" onPress={() => {
