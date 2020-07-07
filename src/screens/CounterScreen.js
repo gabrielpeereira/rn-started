@@ -8,6 +8,7 @@ const reducer = (state, action) => {
         case 'change_decrease':
             return { ...state, count: state.count - 1 }
         default:
+            return state;
     }
 }
 
